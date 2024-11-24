@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We would love to hear your feedback. Please fill out this short survey.</p>
+
+        <form id="survey-form">
+            <!-- Name -->
+            <label id="name-label" for="name">Name:</label>
+            <input 
+                id="name" 
+                type="text" 
+                placeholder="Enter your name" 
+                required
+            >
+
+            <!-- Email -->
+            <label id="email-label" for="email">Email:</label>
+            <input 
+                id="email" 
+                type="email" 
+                placeholder="Enter your email" 
+                required
+            >
+
+            <!-- Number -->
+            <label id="number-label" for="number">Age:</label>
+            <input 
+                id="number" 
+                type="number" 
+                placeholder="Enter your age" 
+                min="18" 
+                max="100" 
+                required
+            >
+
+            <!-- Dropdown -->
+            <label for="dropdown">What is your current role?</label>
+            <select id="dropdown">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Would you recommend us to a friend?</legend>
+                <input type="radio" id="yes" name="recommend" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">No</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>What do you like about our service? (Select all that apply)</legend>
+                <input type="checkbox" id="quality" name="like" value="quality">
+                <label for="quality">Quality</label>
+                <input type="checkbox" id="speed" name="like" value="speed">
+                <label for="speed">Speed</label>
+                <input type="checkbox" id="support" name="like" value="support">
+                <label for="support">Support</label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <label for="comments">Any additional comments:</label>
+            <textarea id="comments" placeholder="Enter your comments here"></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
+
